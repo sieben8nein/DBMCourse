@@ -13,7 +13,6 @@
         <main.class>Main</main.class>
     </properties>
 
-
     <dependencies>
         <dependency>
             <groupId>org.mongodb</groupId>

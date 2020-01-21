@@ -12,10 +12,10 @@ public class Main {
     public static void main(String[] args) {
         Logger mongoLogger = Logger.getLogger("org.mongodb.driver");
         mongoLogger.setLevel(Level.SEVERE);
-        TestDB db = new TestDB( "mongodb+srv://sieben8nein:sieben8neinten@testcluster-gb47g.azure.mongodb.net/test?retryWrites=true&w=majority");
+        TestDB db = new TestDB("ii");
 
         db.setDatabase("examples");
         db.setCollection("inventory");
-        System.out.println(db.getFirstDoc());
+        System.out.println(db.getSpedificFields("random"));
     }
 }

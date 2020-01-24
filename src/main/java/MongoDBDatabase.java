@@ -13,13 +13,13 @@ import org.bson.Document;
 import java.util.ArrayList;
 
 @SuppressWarnings("Duplicates")
-public class TestDB {
+public class MongoDBDatabase {
     private MongoClient mongoClient;
     Gson gson = new GsonBuilder().setPrettyPrinting().create();
     private MongoDatabase db;
     private MongoCollection<Document> collection;
 
-    public TestDB(String mongoUri) {
+    public MongoDBDatabase(String mongoUri) {
         connectAsClient(mongoUri);
     }
 
